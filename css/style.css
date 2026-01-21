@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  li {
+    flex: 1 1 220px; /* grow, shrink, basis */
+  }
+
+  button {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    transition: background 0.2s ease;
+  }
+
+  button:hover {
+    background-color: #e2e2e2;
+  }
+
+  @media (max-width: 600px) {
+    li {
+      flex: 1 1 100%;
+    }
+  }
